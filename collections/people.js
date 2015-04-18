@@ -24,7 +24,9 @@ People.attachSchema(new SimpleSchema({
   score: {
     type: Number,
     label: "Score",
-    min: 0,
-    defaultValue: 0
+    defaultValue: 0,
+    autoform: {
+      omit: true
+    }
   },
 }));
