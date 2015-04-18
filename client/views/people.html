@@ -5,7 +5,9 @@
     {{/each}}
   </ul>
 
-  {{#afModal classes="btn" collection="People" operation="insert"}}
-    New Person
-  {{/afModal}}
+  {{#if current_user}}
+    {{#afModal classes="btn" collection="People" operation="insert"}}
+      New Person
+    {{/afModal}}
+  {{/if}}
 </template>

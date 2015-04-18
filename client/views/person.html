@@ -11,11 +11,13 @@
 
           <div class="badge"><i class="mdi-action-thumb-up"></i> {{voteCount}}</div>
         </div>
-        <div class="card-action">
-          {{#afModal collection="People" operation="update" doc=_id}}
-            edit
-          {{/afModal}}
-        </div>
+        {{#if current_user}}
+          <div class="card-action">
+            {{#afModal collection="People" operation="update" doc=_id}}
+              edit
+            {{/afModal}}
+          </div>
+        {{/if}}
       </div>
     </div>
   </div>

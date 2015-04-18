@@ -5,9 +5,11 @@
     <p>
       {{headline}}
     </p>
-    {{#afModal collection="People" operation="update" doc=_id}}
-      edit
-    {{/afModal}}
+    {{#if current_user}}
+      {{#afModal collection="People" operation="update" doc=_id}}
+        edit
+      {{/afModal}}
+    {{/if}}
 
     <span class="secondary-content">
       <span class="badge">{{voteCount}}</span>
