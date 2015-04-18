@@ -1,0 +1,20 @@
+<template name="layout">
+  {{> autoformModals}}
+  <nav>
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">AirTalent</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+          <a href="javascript.html">
+            {{> loginButtons}}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      {{> yield}}
+    </div>
+  </main>
+</template>

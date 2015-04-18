@@ -20,3 +20,4 @@ cfs:gridfs
 cfs:standard-packages
 gildaspk:autoform-materialize
 gildaspk:autoform-file-materialize
+iron:router
