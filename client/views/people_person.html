@@ -8,7 +8,7 @@
     <p class="referred_by">
       {{referredBy}}
     </p>
-    {{#if current_user}}
+    {{#if currentUser}}
       {{#afModal collection="People" operation="update" doc=_id}}
         edit
       {{/afModal}}
