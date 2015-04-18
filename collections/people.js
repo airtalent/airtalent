@@ -21,12 +21,20 @@ People.attachSchema(new SimpleSchema({
     },
     label: "Profile"
   },
-  score: {
-    type: Number,
-    label: "Score",
-    defaultValue: 0,
+  voterIds: {
+    type: [String],
+    optional: true,
+    defaultValue: [],
     autoform: {
       omit: true
     }
   },
+  voteCount: {
+    type: Number,
+    optional: true,
+    defaultValue: 0,
+    autoform: {
+      omit: true
+    }
+  }
 }));

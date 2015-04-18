@@ -9,15 +9,15 @@ insecure
 meteor-platform
 
 accounts-ui
-materialize:materialize
 accounts-facebook
 service-configuration
+materialize:materialize
 aldeed:autoform
 aldeed:simple-schema
 aldeed:collection2
+gildaspk:autoform-materialize
+gildaspk:autoform-file-materialize
 gildaspk:autoform-modals-materialize
 cfs:gridfs
 cfs:standard-packages
-gildaspk:autoform-materialize
-gildaspk:autoform-file-materialize
 iron:router
