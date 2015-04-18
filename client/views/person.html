@@ -5,6 +5,9 @@
     <p>
       {{headline}}
     </p>
+    {{#afModal collection="People" operation="update" doc=_id}}
+      edit
+    {{/afModal}}
 
     <span class="secondary-content">
       <span class="badge">{{score}}</span>
