@@ -9,12 +9,26 @@ People.attachSchema(new SimpleSchema({
   headline: {
     type: String,
     label: "Headline",
-    max: 1000
+    max: 1000,
+    autoform: {
+      afFieldInput: {
+        type: "textarea"
+      }
+    }
   },
   referredBy: {
     type: String,
     label: "Referred By",
     max: 30
+  },
+  postedDate: {
+    type: Date,
+    optional: true,
+    autoform: {
+      afFieldInput: {
+        type: "date"
+      }
+    }
   },
   profile: {
     type: String,
