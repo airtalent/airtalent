@@ -10,7 +10,8 @@ PeopleController = RouteController.extend({
         name: 1
       }
     });
-  }
+  },
+  loadingTemplate: 'loading'
 });
 
 PersonController = RouteController.extend({
