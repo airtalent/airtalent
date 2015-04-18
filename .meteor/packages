@@ -1,0 +1,22 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+autopublish
+insecure
+meteor-platform
+
+accounts-ui
+materialize:materialize
+accounts-facebook
+service-configuration
+aldeed:autoform
+aldeed:simple-schema
+aldeed:collection2
+gildaspk:autoform-modals-materialize
+cfs:gridfs
+cfs:standard-packages
+gildaspk:autoform-materialize
+gildaspk:autoform-file-materialize
