@@ -11,6 +11,11 @@ People.attachSchema(new SimpleSchema({
     label: "Headline",
     max: 1000
   },
+  referredBy: {
+    type: String,
+    label: "Referred By",
+    max: 30
+  },
   profile: {
     type: String,
     autoform: {

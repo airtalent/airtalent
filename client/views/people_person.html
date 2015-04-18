@@ -5,6 +5,9 @@
     <p>
       {{headline}}
     </p>
+    <p class="referred_by">
+      {{referredBy}}
+    </p>
     {{#if current_user}}
       {{#afModal collection="People" operation="update" doc=_id}}
         edit
