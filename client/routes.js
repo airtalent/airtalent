@@ -1,8 +1,18 @@
 Router.configure({
   layoutTemplate: 'layout'
 });
-// preloadSubscriptions.push('people');
-//
+
+PeopleController = RouteController.extend({
+  data: function() {
+    return People.find({}, {
+      sort: {
+        score: -1,
+        name: 1
+      }
+    });
+  }
+});
+
 PersonController = RouteController.extend({
   data: function() {
     return People.findOne({
@@ -11,10 +21,10 @@ PersonController = RouteController.extend({
   }
 });
 
-
 Meteor.startup(function() {
-  Router.route('/', function() {
-    this.render('people');
+  Router.route('/', {
+    name: 'people',
+    controller: PeopleController
   });
   Router.route('/person/:_id', {
     name: 'person',
