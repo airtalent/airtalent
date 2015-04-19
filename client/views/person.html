@@ -10,8 +10,21 @@
           <p>{{headline}}</p>
           <p>Referred by {{referredBy}}</p>
 
+          <p class="tags">
+            {{#if tag1}}
+              <span class="tag">{{tag1}}</span>
+            {{/if}}
+            {{#if tag2}}
+              <span class="tag">{{tag2}}</span>
+            {{/if}}
+            {{#if tag3}}
+              <span class="tag">{{tag3}}</span>
+            {{/if}}
+          </p>
+
           <div class="badge"><i class="mdi-action-thumb-up"></i> {{voteCount}}</div>
         </div>
+
         {{#if isAdmin}}
           <div class="card-action">
             {{#afModal collection="People" operation="update" doc=_id}}

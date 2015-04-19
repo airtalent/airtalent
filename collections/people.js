@@ -30,6 +30,21 @@ People.attachSchema(new SimpleSchema({
       }
     }
   },
+  tag1: {
+    type: String,
+    label: "Tag 1",
+    optional: true
+  },
+  tag2: {
+    type: String,
+    label: "Tag 2",
+    optional: true
+  },
+  tag3: {
+    type: String,
+    label: "Tag 3",
+    optional: true
+  },
   profile: {
     type: String,
     autoform: {
