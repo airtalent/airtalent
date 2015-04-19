@@ -1,8 +1,8 @@
 <template name="person">
-  <div class="row bg-gray">
+  <div class="row bg-dark-gray">
     <div class="col s12">
       <div class="person-card">
-        <div class="avatar">
+        <div class="person-avatar">
           <img src="/cfs/files/images/{{profile}}" alt="{{name}}'s photo">
         </div>
 
@@ -15,9 +15,6 @@
             {{#autolink}}
               {{headline}}
             {{/autolink}}
-          </p>
-          <p class="referral">
-            Referred by {{referredBy}}
           </p>
         </div>
 
