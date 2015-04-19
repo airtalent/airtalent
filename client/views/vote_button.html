@@ -1,8 +1,14 @@
 <template name="vote_button">
   <div class="vote-box">
-    <button class="vote-button">
-      ^
-    </button>
+    {{#if hasVoted}}
+      <button class="vote-button voted">
+        <i class="mdi-action-done"></i>
+      </button>
+    {{else}}
+      <button class="vote-button">
+        ^
+      </button>
+    {{/if}}
     <p class="vote-count">{{voteCount}}</p>
   </div>
 </template>
