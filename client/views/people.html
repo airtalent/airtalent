@@ -10,7 +10,7 @@
     {{/each}}
   </ul>
 
-  {{#if currentUser}}
+  {{#if isAdmin}}
     {{#afModal classes="btn" collection="People" operation="insert"}}
       New Person
     {{/afModal}}

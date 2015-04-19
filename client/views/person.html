@@ -12,7 +12,7 @@
 
           <div class="badge"><i class="mdi-action-thumb-up"></i> {{voteCount}}</div>
         </div>
-        {{#if currentUser}}
+        {{#if isAdmin}}
           <div class="card-action">
             {{#afModal collection="People" operation="update" doc=_id}}
               edit
