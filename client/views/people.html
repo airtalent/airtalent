@@ -4,11 +4,7 @@
       {{formatDate today}}
     </small>
   </h2>
-  <ul class="people-list">
-    {{#each this}}
-      {{> people_person}}
-    {{/each}}
-  </ul>
+  {{> people_list}}
 
   {{#if isAdmin}}
     {{#afModal classes="btn" collection="People" operation="insert"}}
