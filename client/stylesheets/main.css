@@ -2078,3 +2078,8 @@ input[type=range] {
 .people-list .person:last-child {
   border-bottom: none;
 }
+
+/* line 1183, ../sass/main.scss */
+.container {
+  width: 100%;
+}

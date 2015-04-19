@@ -1177,3 +1177,9 @@ input[type=range] {
     border-bottom: none;
   }
 }
+
+// override materialize max-width
+
+.container {
+  width: 100%
+}
