@@ -1,6 +1,5 @@
 isAdmin = function(input) {
-  //return Meteor.user() && Meteor.user().admin;
-  return true;
+  return Meteor.user();
 };
 
 Handlebars.registerHelper('isAdmin', isAdmin);
