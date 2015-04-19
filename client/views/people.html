@@ -4,7 +4,14 @@
       {{formatDate today}}
     </small>
   </h2>
-  {{> people_list}}
+  {{> people_list peopleToday}}
+
+  <h2 class="header">Yesterday
+    <small>
+      {{formatDate yesterday}}
+    </small>
+  </h2>
+  {{> people_list peopleYesterday}}
 
   {{#if isAdmin}}
     {{#afModal classes="btn" collection="People" operation="insert"}}

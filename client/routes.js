@@ -4,12 +4,16 @@ Router.configure({
 
 PeopleController = RouteController.extend({
   data: function() {
-    return People.find({}, {
+    var all = People.find({}, {
       sort: {
         postedDate: -1,
-        voteCount: -1
       }
-    });
+    }).fetch();
+
+    return {
+      peopleToday: all.slice(0, 5),
+      peopleYesterday: all.slice(5, 10)
+    }
   },
   loadingTemplate: 'loading'
 });
