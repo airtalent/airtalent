@@ -26,7 +26,10 @@
         {{#if isAdmin}}
           <div class="card-action">
             {{#afModal collection="People" operation="update" doc=_id}}
-              edit
+              Edit
+            {{/afModal}}
+            {{#afModal collection="People" operation="remove" doc=_id}}
+              Delete
             {{/afModal}}
           </div>
         {{/if}}
