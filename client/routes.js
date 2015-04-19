@@ -6,8 +6,8 @@ PeopleController = RouteController.extend({
   data: function() {
     return People.find({}, {
       sort: {
-        score: -1,
-        name: 1
+        postedDate: -1,
+        voteCount: 1
       }
     });
   },

@@ -21,3 +21,5 @@ gildaspk:autoform-modals-materialize
 cfs:gridfs
 cfs:standard-packages
 iron:router
+momentjs:moment
+underscore
