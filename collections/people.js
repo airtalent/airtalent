@@ -71,9 +71,6 @@ People.attachSchema(new SimpleSchema({
   voteCount: {
     type: Number,
     optional: true,
-    defaultValue: 0,
-    autoform: {
-      omit: true
-    }
+    defaultValue: 0
   }
 }));
