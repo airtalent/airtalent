@@ -2005,3 +2005,76 @@ input[type=range] {
 .muted {
   opacity: 0.5;
 }
+
+/* line 1111, ../sass/main.scss */
+.tags .tag {
+  min-width: 3rem;
+  padding: 0 6px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: inherit;
+  color: #757575;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #26a69a;
+  border-radius: 2px;
+}
+
+/* line 1128, ../sass/main.scss */
+.people-list {
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 1135, ../sass/main.scss */
+.people-list .person {
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+  height: 84px;
+  padding-left: 83px;
+  position: relative;
+}
+/* line 1145, ../sass/main.scss */
+.people-list .person .avatar {
+  position: absolute;
+  width: 63px;
+  height: 63px;
+  overflow: hidden;
+  left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+/* line 1156, ../sass/main.scss */
+.people-list .person .title {
+  font-size: 16px;
+}
+/* line 1159, ../sass/main.scss */
+.people-list .person p {
+  margin: 0;
+}
+/* line 1163, ../sass/main.scss */
+.people-list .person .vote-box {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #26a69a;
+  border: 1px solid black;
+}
+/* line 1171, ../sass/main.scss */
+.people-list .person .vote-count {
+  font-size: 20px;
+}
+/* line 1176, ../sass/main.scss */
+.people-list .person:last-child {
+  border-bottom: none;
+}

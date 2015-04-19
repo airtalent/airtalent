@@ -1,6 +1,6 @@
 <template name="people_person">
-  <li class="collection-item avatar {{selected}}">
-    <img src="/cfs/files/images/{{profile}}" alt="" class="circle">
+  <li class="person">
+    <img src="/cfs/files/images/{{profile}}" alt="" class="avatar">
     <a href="/person/{{_id}}" class="title">{{name}}</a>
     <p>
       {{headline}}
@@ -14,9 +14,9 @@
       {{/afModal}}
     {{/if}}
 
-    <span class="secondary-content">
-      <span class="badge">{{voteCount}}</span>
+    <div class="vote-box">
       {{> vote_button}}
-    </span>
+      <p class="vote-count">{{voteCount}} 21</p>
+    </div>
   </li>
 </template>
