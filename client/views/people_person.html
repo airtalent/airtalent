@@ -20,5 +20,19 @@
       {{> vote_button}}
       <p class="vote-count">{{voteCount}}</p>
     </div>
+
+
+        {{#if isAdmin}}
+          <div class="card-action">
+            {{#afModal collection="People" operation="update" doc=_id}}
+              Edit
+            {{/afModal}}
+            {{#afModal collection="People" operation="remove" doc=_id}}
+              Delete
+            {{/afModal}}
+          </div>
+
+
+        {{/if}}
   </li>
 </template>
