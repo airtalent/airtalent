@@ -1,0 +1,12 @@
+<template name="tag">
+  <h2 class="header">Tag:
+    <small>
+      {{tag}}
+    </small>
+  </h2>
+  <ul class="collection">
+    {{#each this}}
+      {{> people_person}}
+    {{/each}}
+  </ul>
+</template>

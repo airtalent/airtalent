@@ -7,7 +7,7 @@ PeopleController = RouteController.extend({
     return People.find({}, {
       sort: {
         postedDate: -1,
-        voteCount: 1
+        voteCount: -1
       }
     });
   },
@@ -22,6 +22,29 @@ PersonController = RouteController.extend({
   }
 });
 
+TagController = RouteController.extend({
+  data: function() {
+    var tag = this.params.tag;
+    return People.find({
+      $or: [
+        {
+          tag1: tag
+        },
+        {
+          tag2: tag
+        },
+        {
+          tag3: tag
+        }
+      ]
+    }, {
+      sort: {
+        voteCount: -1
+      }
+    });
+  }
+});
+
 Meteor.startup(function() {
   Router.route('/', {
     name: 'people',
@@ -30,5 +53,9 @@ Meteor.startup(function() {
   Router.route('/person/:_id', {
     name: 'person',
     controller: PersonController
+  });
+  Router.route('/tag/:tag', {
+    name: 'tag',
+    controller: TagController
   });
 });

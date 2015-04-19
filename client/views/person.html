@@ -11,15 +11,9 @@
           <p>Referred by {{referredBy}}</p>
 
           <p class="tags">
-            {{#if tag1}}
-              <span class="tag">{{tag1}}</span>
-            {{/if}}
-            {{#if tag2}}
-              <span class="tag">{{tag2}}</span>
-            {{/if}}
-            {{#if tag3}}
-              <span class="tag">{{tag3}}</span>
-            {{/if}}
+            {{> person_tag tag1}}
+            {{> person_tag tag2}}
+            {{> person_tag tag3}}
           </p>
 
           <div class="badge"><i class="mdi-action-thumb-up"></i> {{voteCount}}</div>
