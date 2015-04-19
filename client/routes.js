@@ -6,7 +6,7 @@ PeopleController = RouteController.extend({
   data: function() {
     var all = People.find({}, {
       sort: {
-        postedDate: -1,
+        voteCount: -1
       }
     }).fetch();
 
