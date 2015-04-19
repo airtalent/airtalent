@@ -27,23 +27,17 @@
       border-radius: 5px;
     }
 
-    .title {
+    .name {
       font-size: 16px;
+      font-weight: 500;
+      color: black;
     }
     p {
       margin: 0;
     }
 
-    .vote-box {
-      position: absolute;
-      top: 16px;
-      right: 16px;
-      color: #26a69a;
-      border: 1px solid black;
-    }
-
-    .vote-count {
-      font-size: 20px;
+    .referred_by {
+      color: #2DCC70
     }
   }
 

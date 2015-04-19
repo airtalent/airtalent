@@ -1,25 +1,28 @@
 <template name="people_person">
   <li class="person">
     <img src="/cfs/files/images/{{profile}}" alt="" class="avatar">
-    <a href="/person/{{slug}}" class="title">{{name}}</a>
+
+    <a href="/person/{{slug}}" class="name">
+      {{name}}
+    </a>
+
     <p>
       {{#autolink}}
         {{headline}}
       {{/autolink}}
     </p>
-    <p class="referred_by">
-      Referred by {{referredBy}}
-    </p>
+
     <p class="tag-list">
       {{> person_tag tag1}}
       {{> person_tag tag2}}
       {{> person_tag tag3}}
     </p>
 
-    <div class="vote-box">
-      {{> vote_button}}
-      <p class="vote-count">{{voteCount}}</p>
-    </div>
+    <p class="referred_by">
+      Referred by {{referredBy}}
+    </p>
+
+    {{> vote_button }}
 
 
         {{#if isAdmin}}
