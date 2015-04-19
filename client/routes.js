@@ -4,7 +4,7 @@ Router.configure({
 
 PeopleController = RouteController.extend({
   data: function() {
-    return People.find({}, {
+    People.find({}, {
       sort: {
         postedDate: -1,
         voteCount: -1
@@ -25,7 +25,7 @@ PersonController = RouteController.extend({
 TagController = RouteController.extend({
   data: function() {
     var tag = this.params.tag;
-    return People.find({
+    var people = People.find({
       $or: [
         {
           tag1: tag
@@ -42,6 +42,11 @@ TagController = RouteController.extend({
         voteCount: -1
       }
     });
+
+    return {
+      people: people,
+      tag: tag
+    }
   }
 });
 
