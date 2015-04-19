@@ -3,7 +3,9 @@
     <img src="/cfs/files/images/{{profile}}" alt="" class="avatar">
     <a href="/person/{{_id}}" class="title">{{name}}</a>
     <p>
-      {{headline}}
+      {{#autolink}}
+        {{headline}}
+      {{/autolink}}
     </p>
     <p class="referred_by">
       Referred by {{referredBy}}

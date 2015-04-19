@@ -7,7 +7,11 @@
           <span class="card-title">{{name}}</span>
         </div>
         <div class="card-content">
-          <p>{{headline}}</p>
+          <p>
+            {{#autolink}}
+              {{headline}}
+            {{/autolink}}
+          </p>
           <p>Referred by {{referredBy}}</p>
 
           <p class="tags">
