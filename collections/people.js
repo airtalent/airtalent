@@ -6,6 +6,11 @@ People.attachSchema(new SimpleSchema({
     label: "Name",
     max: 30
   },
+  slug: {
+    type: String,
+    label: "Slug (for nice urls)",
+    max: 30
+  },
   headline: {
     type: String,
     label: "Headline",

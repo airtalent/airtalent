@@ -17,7 +17,7 @@ PeopleController = RouteController.extend({
 PersonController = RouteController.extend({
   data: function() {
     return People.findOne({
-      _id: this.params._id
+      slug: this.params.slug
     });
   }
 });
@@ -50,7 +50,7 @@ Meteor.startup(function() {
     name: 'people',
     controller: PeopleController
   });
-  Router.route('/person/:_id', {
+  Router.route('/person/:slug', {
     name: 'person',
     controller: PersonController
   });
