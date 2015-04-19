@@ -11,8 +11,8 @@ PeopleController = RouteController.extend({
     }).fetch();
 
     return {
-      peopleToday: all.slice(0, 5),
-      peopleYesterday: all.slice(5, 10)
+      peopleToday: all.slice(0, 4),
+      peopleYesterday: all.slice(4, 8)
     }
   },
   loadingTemplate: 'loading'
