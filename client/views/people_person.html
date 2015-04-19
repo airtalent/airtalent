@@ -8,11 +8,11 @@
     <p class="referred_by">
       Referred by {{referredBy}}
     </p>
-    {{#if isAdmin}}
-      {{#afModal collection="People" operation="update" doc=_id}}
-        edit
-      {{/afModal}}
-    {{/if}}
+    <p class="tags">
+      {{> person_tag tag1}}
+      {{> person_tag tag2}}
+      {{> person_tag tag3}}
+    </p>
 
     <div class="vote-box">
       {{> vote_button}}
