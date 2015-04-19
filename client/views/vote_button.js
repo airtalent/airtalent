@@ -7,6 +7,8 @@ Template.vote_button.events({
       return;
     }
 
+    console.log("voting for: "+this._id);
+
     Meteor.call('People.vote', this._id);
   }
 });

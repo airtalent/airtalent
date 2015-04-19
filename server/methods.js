@@ -1,5 +1,5 @@
 Meteor.methods({
-  'People.vote': function (_id) {
+  'People.vote': function(_id) {
     if (!Meteor.user()) {
       return;
     }
@@ -8,7 +8,24 @@ Meteor.methods({
       return;
     }
 
-    People.update({_id: _id}, {$inc: {voteCount: 1}, $addToSet: {voterIds: this.userId}});
-    Meteor.users.update({_id: this.userId}, {$addToSet: {'profile.votedPersonIds': _id}});
+    console.log("voting for: " + _id);
+
+    People.update({
+      _id: _id
+    }, {
+      $inc: {
+        voteCount: 1
+      },
+      $addToSet: {
+        voterIds: this.userId
+      }
+    });
+    Meteor.users.update({
+      _id: this.userId
+    }, {
+      $addToSet: {
+        'profile.votedPersonIds': _id
+      }
+    });
   }
 });
