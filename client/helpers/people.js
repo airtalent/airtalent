@@ -3,6 +3,8 @@ Template.people.helpers({
     return new Date();
   },
   yesterday: function() {
-    return (new Date() - 1);
+    var date = new Date();
+    date.setDate(date.getDate() - 1);
+    return date;
   }
 });
