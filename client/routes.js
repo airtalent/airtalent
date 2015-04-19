@@ -4,7 +4,7 @@ Router.configure({
 
 PeopleController = RouteController.extend({
   data: function() {
-    People.find({}, {
+    return People.find({}, {
       sort: {
         postedDate: -1,
         voteCount: -1
