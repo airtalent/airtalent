@@ -1,5 +1,5 @@
 Template.vote_button.events({
-  'click': function(event, template) {
+  'click .vote-button': function(event, template) {
     event.preventDefault();
 
     if (!Meteor.user()) {
@@ -12,12 +12,12 @@ Template.vote_button.events({
 });
 
 Template.vote_button.helpers({
-  hasVotedClass: function() {
+  hasVoted: function() {
     if (!Meteor.user()) {
       return;
     }
     if (_(Meteor.user().profile.votedPersonIds).contains(this._id)) {
-      return 'has-voted';
+      return true;
     }
   }
 });
